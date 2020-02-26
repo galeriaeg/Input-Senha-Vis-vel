@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<title>ALEXANDRE HENRIQUE</title>
+			<meta charset="utf-8" />
+		</head>
+		<body>	
+			<input type="password" name="senha" id="senha" style="float:left;padding:6px;" /><img src="icon-pass-off.png" id="ico" onclick="pass();" style="float:left;margin:5px;cursor:pointer;" />
+			<script>
+			function pass(){
+			var p = document.getElementById("senha").type;
+				
+				if(p == "password"){
+				document.getElementById("senha").type="text";
+				document.getElementById("ico").src="icon-pass.png";
+				}
+				else{
+				document.getElementById("senha").type="password";
+				document.getElementById("ico").src="icon-pass-off.png";
+				}
+			}
+			</script>
+
+		</body
